@@ -1,0 +1,114 @@
+<div class="container d-flex align-items-center justify-content-center">
+  <div class="card ">
+    <img src="{{general.imagePath}}" class="card-img-top" alt="...">
+    <div class="card-img-overlay">
+      <div class="row">
+        <div class="col-sm-6 ">
+          <h5 class="card-title "> {{name}}
+          </h5>
+        </div>
+        <div class="col-sm-6 ">
+          <div class="input-group ">
+            <input type="text" class="form-control text-white bg-dark" #userInput placeholder="Location">
+            <div class="input-group-append ">
+              <button class="btn btn-dark" type="button" (click)="getCity(userInput.value)"><i
+                  class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer bg-white">
+      <div class="row no-space">
+        <div class="col-lg-4 col-md-5 pl-30 py-30">
+          <div class="row">
+            <div class="col-4">
+              <div class="vertical-align">
+                <i class="vertical-align-middle  {{general.icon}} font-size-50 mt-10"></i>
+              </div>
+            </div>
+            <div class="col-8">
+              <span class="blue-600 font-size-40">{{ main.temp_max }}°
+                <span class="font-size-30">C</span>
+              </span>
+              <span class="font-size-18 blue-grey-700">/</span>
+              <span class="font-size-18 blue-grey-700">{{main.temp_min}}°
+                <span class="font-size-16">C</span>
+              </span>
+              <p class="font-size-14 mb-0">{{description.toUpperCase() }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-7">
+          <div class="row no-space text-center">
+            <div class="col-2">
+              <div class="weather-day vertical-align">
+                <div class="vertical-align-middle font-size-16">
+                  <div class="mb-10">Tem Max</div>
+                  <i class="wi-thermometer font-size-24 mb-10"></i>
+                  <div>{{main.temp_max}}°
+                    <span class="font-size-12">C</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="weather-day vertical-align">
+                <div class="vertical-align-middle font-size-16">
+                  <div class="mb-10">Tem MIN</div>
+                  <i class="wi-thermometer-exterior font-size-24 mb-10"></i>
+                  <div>{{main.temp_min}}°
+                    <span class="font-size-12">C</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="weather-day vertical-align">
+                <div class="vertical-align-middle font-size-16">
+                  <div class="mb-10">SUNRISE</div>
+                  <i class="wi-sunrise font-size-24 mb-10"></i>
+                  <div>{{sys.sunrise * 1000 | date:'H:mm'}}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="weather-day vertical-align">
+                <div class="vertical-align-middle font-size-16">
+                  <div class="mb-10">SUNSET</div>
+                  <i class="wi-sunset font-size-24 mb-10"></i>
+                  <div>{{sys.sunset * 1000 | date:'H:mm'}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="weather-day vertical-align">
+                <div class="vertical-align-middle font-size-16">
+                  <div class="mb-10">HUMID</div>
+                  <i class="wi-humidity font-size-24 mb-10"></i>
+                  <div>{{main.humidity}}
+                    <span class="font-size-12">%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="weather-day vertical-align">
+                <div class="vertical-align-middle font-size-16">
+                  <div class="mb-10">WIND</div>
+                  <i class="wi-strong-wind font-size-24 mb-10"></i>
+                  <div>{{wind.speed}}
+                    <span class="font-size-12">meter/sec</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

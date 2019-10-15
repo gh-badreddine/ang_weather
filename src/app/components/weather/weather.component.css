@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+img{
+    height: 480px;
+    width: 960px;
+}
+html,
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-family: Roboto, sans-serif;
+    color: rgb(118, 131, 143);
+}
+.container {
+    height: 100vh;
+}
+
+.card-title {
+    color: #fff;
+    font-size: 40px;
+}
+.blue-600 {
+    color: #3e8ef7;
+}
+.font-size-40 {
+    font-size: 40px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+.font-size-50 {
+    font-size: 50px;
+}
+.vertical-align-middle {
+    vertical-align: middle;
+}
+.py-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.vertical-align:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
+input.form-control{
+    border: 1px solid #292b2c;
+    border-radius: 200px;
+    border-right: none;
+}
+.form-control:focus{
+    border: none;
+    border-right: none;
+    box-shadow: none; 
+}
+.btn{
+    border: 1px solid #292b2c;
+    border-radius: 200px;
+    border-left: none;
+}
+.btn:focus{
+    border: none;
+    border-left: none;
+    box-shadow: none;
+}
+.input-group{
+    border-radius: 200px;
+}
+
+
